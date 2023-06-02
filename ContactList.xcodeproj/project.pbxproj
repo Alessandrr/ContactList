@@ -66,7 +66,7 @@
 		1F2A361A2A29FD7C00DBB2B8 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				1F2A36352A29FE7200DBB2B8 /* DataStore.swift */,
+				1F2A363F2A2A392F00DBB2B8 /* Services */,
 				1F2A36342A29FDED00DBB2B8 /* Models */,
 				1F2A36302A29FD9D00DBB2B8 /* Config */,
 				1F2A362F2A29FD8C00DBB2B8 /* View Controllers */,
@@ -112,6 +112,14 @@
 				1F2A36322A29FDE800DBB2B8 /* Person.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1F2A363F2A2A392F00DBB2B8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F2A36352A29FE7200DBB2B8 /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -11,10 +11,6 @@ class FullInfoTableViewController: UITableViewController {
 
     var people: [Person]!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
 
     // MARK: - Table view data source
 
