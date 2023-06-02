@@ -14,10 +14,11 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewControllers?.forEach { viewController in
-            if let navigationVC = viewController as? UINavigationController {
-                guard let contactListVC = navigationVC.topViewController as? ContactsViewController else { return }
+            guard let navigationVC = viewController as? UINavigationController else { return }
+            
+            if let contactListVC = navigationVC.topViewController as? ContactsViewController {
                 contactListVC.people = people
-            } else if let fullInfoVC = viewController as? FullInfoTableViewController {
+            } else if let fullInfoVC = navigationVC.topViewController as? FullInfoTableViewController {
                 fullInfoVC.people = people
             }
         }
