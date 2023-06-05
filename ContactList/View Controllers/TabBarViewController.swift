@@ -13,10 +13,10 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViews()
+        setupViewControllers()
     }
     
-    private func setupViews() {
+    private func setupViewControllers() {
         viewControllers?.forEach { viewController in
             guard let navigationVC = viewController as? UINavigationController else { return }
             

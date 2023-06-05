@@ -25,9 +25,10 @@ class ContactsViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
         let person = people[indexPath.row]
         var content = cell.defaultContentConfiguration()
+        
         content.text = person.fullName
         cell.contentConfiguration = content
+        
         return cell
     }
 }
-
