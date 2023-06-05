@@ -19,7 +19,7 @@ struct Person {
     }
     
     static func getPeople() -> [Person] {
-        let data = DataStore()
+        let data = DataStore.shared
         
         let randomNames = data.firstNames.shuffled()
         let randomLastNames = data.lastNames.shuffled()
