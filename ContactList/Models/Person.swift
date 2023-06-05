@@ -8,6 +8,7 @@
 import Foundation
 
 struct Person {
+    
     let firstName: String
     let lastName: String
     let email: String
@@ -17,7 +18,9 @@ struct Person {
         "\(firstName) \(lastName)"
     }
     
-    static func getPeople(from data: DataStore) -> [Person] {
+    static func getPeople() -> [Person] {
+        let data = DataStore()
+        
         let randomNames = data.firstNames.shuffled()
         let randomLastNames = data.lastNames.shuffled()
         let randomEmails = data.eMails.shuffled()

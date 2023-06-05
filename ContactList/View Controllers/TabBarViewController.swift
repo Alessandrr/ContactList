@@ -9,10 +9,14 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
     
-    private let people = Person.getPeople(from: DataStore())
+    private let people = Person.getPeople()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
+    }
+    
+    private func setupViews() {
         viewControllers?.forEach { viewController in
             guard let navigationVC = viewController as? UINavigationController else { return }
             

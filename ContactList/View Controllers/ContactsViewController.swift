@@ -17,7 +17,6 @@ class ContactsViewController: UITableViewController {
         detailsVC.person = people[indexPath.row]
     }
     
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         people.count
     }
